@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../stylesheets/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Talk App</title>
+</head>
+
+<body id="index-page">
+  <nav class="navbar sticky-top navbar-light bg-faded stick-top main-background-color">
+    <p class="navbar-brand fixed-left"> Delete</p>
+    <a class="navbar-brand navbar-title" href="#">Talk App</a>
+    <a class="navbar-brand fixed-right" href="./login">Sign Out</a>
+  </nav>
+  <div class="chat-list">
+    <div class="chat-box">
+      <!-- <div class="message-user">
+        <span>Kenny</span>
+        <p>Hello?</p>
+      </div>
+      <div class="message-other">
+        <span>Venny</span>
+        <p>Hi!</p>
+      </div> -->
+    </div>
+    <textarea name="message" placeholder="Your message"></textarea>
+    <button type="button" name="button">Send</button>
+  </div>
+</body>
+<script> var email = '<%- email %>'; </script>
+<script> var username = '<%- username %>'; </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
+<script type="text/javascript" src="../javascripts/index.js" ></script>
+</html>
